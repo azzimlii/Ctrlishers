@@ -31,5 +31,7 @@ Train/validation bölgüsü: 80/20, `stratify=y`, `random_state=42`.
 ## Nəticələr (validation)
 
  Model ROC-AUC 
+ 
 Logistic Regression (scale olmadan) ROC-AUC 0.61
+
 Logistic Regression + StandardScaler ROC-AUC 0.70
