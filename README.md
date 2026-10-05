@@ -12,10 +12,7 @@ Kaggle müsabiqəsi **ctrl-is-hers-final** üçün ikili (binary) təsnifat layi
 | `test.csv` | `target` olmayan data |
 | `sample_submission.csv` | Submission formatı |
 
-Əsas sütunlar:
 - `publish_date`, `weekday`, `channel` — tarix və kateqorial dəyişənlər
-- Mətn xüsusiyyətləri: token sayı, link sayı, şəkil/video sayı və s.
-- Açar söz (`kw_*`), mövzu (`LDA_*`) və sentiment (`*_polarity`, `*_subjectivity`) xüsusiyyətləri
 
 Train datasında boş dəyər və dublikat yoxdur. Target balanslıdır (1: 17 357, 0: 14 358).
 
@@ -36,6 +33,3 @@ Train/validation bölgüsü: 80/20, `stratify=y`, `random_state=42`.
  Model ROC-AUC 
 Logistic Regression (scale olmadan) ROC-AUC 0.61
 Logistic Regression + StandardScaler ROC-AUC 0.70
-- Outlier-lərin təmizlənməsi və ya log-transform
-- Cross-validation və hiperparametr axtarışı
-- `year`/`month` xüsusiyyətlərinin təsirinin yoxlanması (test datası train-dən sonrakı tarixləri əhatə edir)
